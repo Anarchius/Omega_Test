@@ -1,21 +1,19 @@
-<?php>
-    <table>
-        <tr>
+<?php
 
-            <th></th>
-              <th scope="col">Stage 1</th>
-              <th scope="col">Stage 2</th>
-              <th scope="col">Stage 3</th>
-              <th scope="col">Stage 4</th>
+    $numbers = array(
+        "First Iteration" => 1,
+        "Second Iteration" => 2,
+        "Third Iteration" => 3,
+    );
 
-        </tr>
-        <tr>
+    foreach ($numbers as $iteration => $number) {
+        echo $iteration . ' is equal to ' . $number . '<br />';
+    }
 
-            <th scope="row">Path</th>
-              <td>Core code</td>
-              <td>Transform</td>
-              <td>Extensions</td>
-              <td>Optimize</td>
+    $var = 1;
 
-        </tr>
-    </table>
+    foreach ($numbers as $revIteration => $var) {
+        echo $revIteration . ' is described by wrong number ' . $var . '<br />';
+    }
+
+?>
